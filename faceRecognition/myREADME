@@ -1,0 +1,14 @@
+
+
+Uygulamamız Açıldığında Yüztarama koyabiliriz , Kullanıcı telefonunun bir başkasında oldugunda girilmesini istemediği durumda aktif edebilir.
+
+
+Güvenlik amaclı özellik olarak uygulamaya ekliyebiliriz.
+
+Parmak İzide aynı bu şekilde yapılıyor.
+
+Buttona gerekli kodları yazdıktan sonra "info" ya gelip bir açıklama yazmamız gerekiyor.
++ ya basıp "Privacy- Face Id Usage Des.." kullanırız.Sağ tarafınada kullanıcıya gosterılecek yazıyı gösterir.Simülasyondada faceId deneyebiliyoruz.( Video 130 )
+
+NOT: Burada  performsegu yu thread ile yapmamız gerekıyor. Nedeni ise Arka planda birsey yapıyorsak yanı kullanıcının arayüzle etkileşimini etkileyecek bir iş yapıyorsak Bizim farklı bir seviyede , farklı bir "Main thread" de bu işlemi yapmamız gerekiyor. O da  kodda bulunan  "async"  işlemi ile yapılır."DispatchQueue.main.async " Kullanılır.
+ 
